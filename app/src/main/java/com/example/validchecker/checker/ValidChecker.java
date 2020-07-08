@@ -11,6 +11,8 @@ import com.example.validchecker.util.LogUtils;
 import com.example.validchecker.util.StringUtils;
 import com.example.validchecker.util.ToastUtils;
 
+import androidx.annotation.IdRes;
+
 /**
  * Created by zhong on 2019/7/21.
  */
@@ -32,7 +34,7 @@ public class ValidChecker {
      * @param id EditView id
      * @param checker 检测接口
      */
-    public ValidChecker addChecker(int id, Checker checker){
+    public ValidChecker addChecker(@IdRes int id, Checker checker){
         Checker chainChecker = checkers.get(id);
         if (chainChecker != null) {
             ((CheckerDecoration)checker).setChecker(chainChecker);
