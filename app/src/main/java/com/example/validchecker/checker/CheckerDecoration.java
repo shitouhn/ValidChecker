@@ -5,8 +5,7 @@ import android.widget.TextView;
 import com.example.validchecker.util.ObjectUtils;
 import com.example.validchecker.util.StringUtils;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
+import androidx.annotation.CallSuper;
 
 /**
  * Created by zhong on 2019/7/21.
@@ -24,6 +23,7 @@ public class CheckerDecoration implements Checker {
         this.checker = checker;
     }
 
+    @CallSuper
     @Override
     public String check(TextView textView, String text) {
         if (ObjectUtils.nonNull(checker)){
