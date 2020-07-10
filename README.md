@@ -1,8 +1,8 @@
 # ValidChecker
-在使用前检查EditView和TextView值是否有效。
-用法如下：
-addChecker()添加Id及检测器。
-check()方法进行检测，返回true表示检测通过。
+  在使用前检查EditView和TextView值是否有效。
+  用法如下：
+  addChecker()添加Id及检测器。
+  check()方法进行检测，返回true表示检测通过。
 
 ValidChecker.getInstance()
                 .addChecker(R.id.user_name,
