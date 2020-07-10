@@ -23,4 +23,4 @@ ValidChecker.getInstance()
                                 .phone("请输入正确的手机号")
                                 .build())
                 .check(this);
-                ```
+```
